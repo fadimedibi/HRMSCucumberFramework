@@ -2,6 +2,8 @@ package com.hrms.utils;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -22,7 +24,7 @@ import com.hrms.testbase.PageInitiliazer;
 //command+o----->for mac to open all the methods
 //ctrl+o---->for windows
 
-public class CommonMethods extends PageInitiliazer{
+public class CommonMethods extends PageInitiliazer {
 //	public static WebDriver driver;
 
 //	/**
@@ -51,17 +53,17 @@ public class CommonMethods extends PageInitiliazer{
 //		driver.get(url);
 
 //		public static  setUp(String browser) {
-		//
+	//
 //				if (browser.equalsIgnoreCase("chrome")) {
 //					System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
 //					WebDriver driver = new ChromeDriver();
-		//
+	//
 //				} else if (browser.equalsIgnoreCase("firefox")) {
 //					System.setProperty("webdriver.gecko.driver", "drivers/geckodriver.exe");
 //					WebDriver driver = new FirefoxDriver();
 //				}
 //				return driver;
-		//
+	//
 //			}
 //	}
 
@@ -201,19 +203,19 @@ public class CommonMethods extends PageInitiliazer{
 		js.executeScript("window.scrollBy(0, -" + pixel + ")");
 	}
 
-	
-	/** 
-	 * This method will take a screenshot	 
+	/**
+	 * This method will take a screenshot
+	 * 
 	 * @param fileName
 	 */
 	public static byte[] takeScreenshot(String fileName) {
 
-		TakesScreenshot ts = (TakesScreenshot)driver;
-		
-		//create picture in a form of bytes --> we need it to attach it to our scenario
-		byte[]picture=ts.getScreenshotAs(OutputType.BYTES);
-	
-		//taking a picture in a form of file and store it in the specified location
+		TakesScreenshot ts = (TakesScreenshot) driver;
+
+		// create picture in a form of bytes --> we need it to attach it to our scenario
+		byte[] picture = ts.getScreenshotAs(OutputType.BYTES);
+
+		// taking a picture in a form of file and store it in the specified location
 		Date date = new Date();
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy_MMdd_HHmmss");
 		String timeStamp = sdf.format(date.getTime());
@@ -231,59 +233,65 @@ public class CommonMethods extends PageInitiliazer{
 	}
 
 	/**
-     * This method will enter text
-     * 
-     * @param element
-     * @param value
-     */
-    public static void sendText(WebElement element, String value) {
-        element.clear();
-        element.sendKeys(value);
-    }
-    /**
-     * This method will create an Object of WebDriverWait
-     * 
-     * @return WebDriverWait
-     */
-    public static WebDriverWait getWaitObject() {
-        WebDriverWait wait = new WebDriverWait(driver, Constants.EXPLICIT_LOAD_TIME);
-        return wait;
-    }
-    /**
-     * This method will wait until element becomes clickable
-     * 
-     * @param element
-     */
-    public static void waitForClickability(WebElement element) {
-        getWaitObject().until(ExpectedConditions.elementToBeClickable(element));
-    }
-    /**
-     * This method will wait until element becomes visible
-     * 
-     * @param element
-     */
-    public static void waitForVisibility(WebElement element) {
-        getWaitObject().until(ExpectedConditions.visibilityOf(element));
-    }
-    /**
-     * This method will wait until element becomes invisible
-     * 
-     * @param element
-     */
-    public static void waitForInvisibility(WebElement element) {
-        getWaitObject().until(ExpectedConditions.invisibilityOf(element));
-    }
-    
-    /**
-     * This method will click on the element
-     * @param element
-     */
-    public static void click(WebElement element) {
-        waitForClickability(element);
-        element.click();
+	 * This method will enter text
+	 * 
+	 * @param element
+	 * @param value
+	 */
+	public static void sendText(WebElement element, String value) {
+		element.clear();
+		element.sendKeys(value);
+	}
 
-    }
-    /**
+	/**
+	 * This method will create an Object of WebDriverWait
+	 * 
+	 * @return WebDriverWait
+	 */
+	public static WebDriverWait getWaitObject() {
+		WebDriverWait wait = new WebDriverWait(driver, Constants.EXPLICIT_LOAD_TIME);
+		return wait;
+	}
+
+	/**
+	 * This method will wait until element becomes clickable
+	 * 
+	 * @param element
+	 */
+	public static void waitForClickability(WebElement element) {
+		getWaitObject().until(ExpectedConditions.elementToBeClickable(element));
+	}
+
+	/**
+	 * This method will wait until element becomes visible
+	 * 
+	 * @param element
+	 */
+	public static void waitForVisibility(WebElement element) {
+		getWaitObject().until(ExpectedConditions.visibilityOf(element));
+	}
+
+	/**
+	 * This method will wait until element becomes invisible
+	 * 
+	 * @param element
+	 */
+	public static void waitForInvisibility(WebElement element) {
+		getWaitObject().until(ExpectedConditions.invisibilityOf(element));
+	}
+
+	/**
+	 * This method will click on the element
+	 * 
+	 * @param element
+	 */
+	public static void click(WebElement element) {
+		waitForClickability(element);
+		element.click();
+
+	}
+
+	/**
 	 * This method will select value from DropDown with visibleText
 	 * 
 	 * @param element
@@ -343,9 +351,22 @@ public class CommonMethods extends PageInitiliazer{
 			}
 		}
 	}
-    
-    
-    
-    
+/** 
+ * 
+ */
+	static String jsonFile;
+
+	public static String readJson(String fileName) {
+		try {
+
+			jsonFile = new String(Files.readAllBytes(Paths.get(fileName)));
+
+		} catch (IOException e) {
+
+			e.printStackTrace();
+		}
+		return jsonFile;
+
 	}
 
+}

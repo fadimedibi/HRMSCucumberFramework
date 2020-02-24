@@ -1,9 +1,12 @@
+C:\Users\murat\eclipse-workspace\HRMSCucumberFramework\src\test\java\com\hrms\runners\TestsRunner.java
 C:\Users\murat\eclipse-workspace\HRMSCucumberFramework\src\test\java\com\hrms\testbase\BaseClass.java
 C:\Users\murat\eclipse-workspace\HRMSCucumberFramework\src\test\java\com\hrms\pages\LoginPageElements.java
 C:\Users\murat\eclipse-workspace\HRMSCucumberFramework\src\test\java\com\hrms\steps\ReportSteps.java
 C:\Users\murat\eclipse-workspace\HRMSCucumberFramework\src\test\java\com\hrms\steps\AddEmployeeSteps.java
+C:\Users\murat\eclipse-workspace\HRMSCucumberFramework\src\test\java\com\hrms\steps\TestsSteps.java
 C:\Users\murat\eclipse-workspace\HRMSCucumberFramework\src\test\java\com\hrms\pages\LeaveListPageElements.java
 C:\Users\murat\eclipse-workspace\HRMSCucumberFramework\src\test\java\com\hrms\runners\AddEmployeeRunnerClass.java
+C:\Users\murat\eclipse-workspace\HRMSCucumberFramework\src\test\java\com\hrms\runners\FailedRunner.java
 C:\Users\murat\eclipse-workspace\HRMSCucumberFramework\src\test\java\com\hrms\pages\AddEmployeePageElementsAsel.java
 C:\Users\murat\eclipse-workspace\HRMSCucumberFramework\src\test\java\com\hrms\pages\PersonalDetailsPageElements.java
 C:\Users\murat\eclipse-workspace\HRMSCucumberFramework\src\test\java\com\hrms\steps\LoginSteps.java

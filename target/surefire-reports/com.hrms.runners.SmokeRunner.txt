@@ -1,4 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: com.hrms.runners.SmokeRunner
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 67.058 s - in com.hrms.runners.SmokeRunner
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.457 s <<< FAILURE! - in com.hrms.runners.SmokeRunner
+Add Employee.Add new Employee  Time elapsed: 0.007 s  <<< ERROR!
+java.lang.NullPointerException
+
+Add Employee.Add and Modify Employee Details  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException
+
+Login.Valid login  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException
+

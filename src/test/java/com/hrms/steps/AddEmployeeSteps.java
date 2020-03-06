@@ -19,7 +19,7 @@ import io.cucumber.datatable.DataTable;
 
 public class AddEmployeeSteps extends CommonMethods {
 
-		String empId;
+	public	String empId;
 	
 
 	@Given("I am logged into HRMS")

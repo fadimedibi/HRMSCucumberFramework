@@ -30,6 +30,11 @@ public class Constants {
 	public static final String USER_NAME=System.getProperty("user.name");
 	
 	public static final String SCREENSHOTS_FILEPATH=System.getProperty("user.dir")+"/target/screenshots/";
+
+	public static final String STORE_JSON = System.getProperty("user.dir")
+            + "/src/test/resources/JSONFiles/store.json";
+
+
 }
 
 

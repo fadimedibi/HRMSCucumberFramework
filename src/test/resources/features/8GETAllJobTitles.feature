@@ -1,8 +1,8 @@
-
+@APITESTDIEGO
 Feature: Validating Syntax HRMS API's JobTitles
 Background:
 Given user generates token
-@SyntaxHRMSAPIEndToEnd22
+@SyntaxHRMSAPIEndToEnd22JobTitle
 Scenario: This test will check all Job Titles
 Given user calls getAllJobTitles API
 When User retrieves getJobTitles response

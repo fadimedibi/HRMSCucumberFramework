@@ -178,7 +178,7 @@ public class CommonMethods extends PageInitiliazer {
 	 * 
 	 * @param element
 	 */
-	public static void scrollIntoElement(WebElement element) {
+	public static void O(WebElement element) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView(true);", element);
 	}

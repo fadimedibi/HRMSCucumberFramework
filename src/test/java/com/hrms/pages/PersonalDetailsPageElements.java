@@ -27,7 +27,7 @@ public class PersonalDetailsPageElements {
 	@FindBy(xpath="//input[@id='personal_txtLicExpDate']")
 	public WebElement driverLicenseExp;
 	
-	@FindBy(xpath="//input[@id='personal_txtNICNo']")
+	@FindBy (id="personal_txtNICNo")
 	public WebElement SSNNo;
 	
 	@FindBy(xpath="//input[@id='personal_txtSINNo']")

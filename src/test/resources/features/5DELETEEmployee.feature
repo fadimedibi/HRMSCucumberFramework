@@ -1,8 +1,9 @@
+@APITESTDIEGO
 Feature: Verifying deletion employee using /deleteEmployee.php HRMS API
 Background:
 Given user generates token
 
-@SyntaxHRMSAPIEndToEnd22
+@SyntaxHRMSAPIEndToEnd22DeleteEmp
 Scenario: Retrieving updated Employee using /deleteEmployee.php API
 Given user calls deleteEmployee API to retrieve updated employee
 When User retrieves response for deleteEmployee API to retrieve updated employee 

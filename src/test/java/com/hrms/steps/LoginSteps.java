@@ -25,7 +25,7 @@ public class LoginSteps extends CommonMethods {
 
 		
 		sendText(login.username, "Admin");
-		sendText(login.password, "Syntax@123");
+		sendText(login.password, "Hum@nhrm123");
 	}
 
 	@When("I click on login button")

@@ -121,6 +121,7 @@ public class AddEmployeeSteps extends CommonMethods {
 			//passing new details to the employee
 			sendText(pdetails.driverLicenseNo, map.get("DriverLicense"));
 			sendText(pdetails.driverLicenseExp, map.get("ExpirationDate"));
+			Thread.sleep(2000);
 			sendText(pdetails.SSNNo, map.get("SSN"));
 			sendText(pdetails.SINNo, map.get("SIN"));
 			clickRadio(pdetails.genderLabels, map.get("Gender"));

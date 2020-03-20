@@ -26,7 +26,7 @@ public class SyntaxAPIAuthenticationSteps {
 	 * 'generateTokenURI'
 	 */
 
-	String generateTokenURI = "http://54.167.125.15/syntaxapi/api/generateToken.php";
+	String generateTokenURI = "http://166.62.36.207/syntaxapi/api/generateToken.php";
 
 	/**
 	 * Here is our Background 'Given' which will always run prior to any scenario we

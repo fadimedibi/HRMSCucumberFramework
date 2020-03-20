@@ -70,7 +70,7 @@
 				<version>3.0.0-M4</version>
 				<configuration>
 					<includes>
-						<include> **/*RegressionRunner.java</include>
+					<include>	**/*SmokeRunner.java</include>
 					</includes>
 					<testFailureIgnore>true</testFailureIgnore> <!-- to get report even when fails -->
 				</configuration>
@@ -94,7 +94,7 @@
 							<inputDirectory>${project.build.directory}</inputDirectory>
 							<jsonFiles>
 								<!-- supports wildcard or name pattern -->
-								<param>**/*.json</param>
+								<param>**/cucumber.json</param>
 							</jsonFiles>
 						</configuration>
 					</execution>

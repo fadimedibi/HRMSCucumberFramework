@@ -1,8 +1,8 @@
-
+@APITESTDIEGO
 Feature: Validating Syntax HRMS API's Employee Statuses
 Background:
 Given user generates token
-@SyntaxHRMSAPIEndToEnd22
+@SyntaxHRMSAPIEndToEnd22EmpStatus
 Scenario: This test will check to see all employee statuses
 Given user calls getEmployeeStatuses API
 When User retrieves getEmployeeStatuses response

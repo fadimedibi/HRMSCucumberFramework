@@ -1,8 +1,8 @@
-@SyntaxHRMSAPIEndToEnd22"
+@APITESTDIEGO
 Feature: Validating Syntax HRMS API's
 Background:
 Given user generates token
-@SyntaxHRMSAPIEndToEnd22
+@SyntaxHRMSAPIEndToEnd22AllEmp
 Scenario: This test will check to see all employees
 Given user calls getAllEmployees API
 When User retrieves getAllEmployees response

@@ -2,7 +2,7 @@
 Feature: Validating Syntax /createEmployee.php HRMS API
 Background:
 Given user generates token
-@SyntaxHRMSAPIEndToEnd22
+@SyntaxHRMSAPIEndToEnd22CreateEmp
 Scenario: This test will check to see if an Employee has been created
 Given user calls createEmployee API to verify that an employee was created
 When User retrieves response for createEmployee API

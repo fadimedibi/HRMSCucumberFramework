@@ -6,7 +6,7 @@ Feature: Add Employee
     Given I am logged into HRMS
     And I navigated to Add Employee Page
 
-  @smoke @smoke
+  @smoke
   Scenario: Add new Employee
     When I add "John", "S" and "Smith"
     And I click Save
@@ -45,19 +45,19 @@ Feature: Add Employee
     When I click Save
     Then I see Employee has been succesfully added
 
-  @smoke
-  Scenario: Add and Modify Employee Details
-    When I enter employee details
-      | FirstName | MiddleName | LastName |
-      | Jessica   | J          | Smith    |
+  
+Scenario: Add and Modify Employee Details
+    #When I enter employee details
+      #| FirstName | MiddleName | LastName |
+      #| Jessica   | J          | Smith    |
     #| Jane      | S          | Smithy   |
     #| Jack      | M          | Smithes  |
-    And I click Save
-    And I click on Edit
-    Then I am able to modify Employee Details
-      | DriverLicense | ExpirationDate | SSN         | SIN   | Gender | MaritalStatus | Nationality | DOB        |
-      | N78787567     | 2021-12-08     | 123-45-6789 | 76876 | Male   | Other         | Afghan      | 1980-11-10 |
-      | Nhkjkgkhgkg   | 2018-12-08     | 456-45-6789 |  9876 | Female | Married       | Burmese     | 1980-10-19 |
+    #And I click Save
+    #And I click on Edit
+    #Then I am able to modify Employee Details
+      #| DriverLicense | ExpirationDate | SSN         | SIN   | Gender | MaritalStatus | Nationality | DOB        |
+      #| N78787567     | 2021-12-08     | 123-45-6789 | 76876 | Male   | Other         | Afghan      | 1980-11-10 |
+      #| Nhkjkgkhgkg   | 2018-12-08     | 456-45-6789 |  9876 | Female | Married       | Burmese     | 1980-10-19 |
 
   Scenario: Add Employee and validate database
     When I add "James", "John" and "Smith"

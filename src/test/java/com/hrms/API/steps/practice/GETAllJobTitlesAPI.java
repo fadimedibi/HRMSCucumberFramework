@@ -82,11 +82,10 @@ public class GETAllJobTitlesAPI {
                 Assert.assertEquals("Jr Sales Manager", array.get(i));
             }else if (i == 17) {
                 Assert.assertEquals("Graphic Designer", array.get(i));
-            }else if (i == 18) {
-                Assert.assertEquals("Usaqmuri", array.get(i));
+           
             }
 		}
-		Assert.assertEquals(19, array.length());
+		Assert.assertEquals(18, array.length());
 		System.out.println(array.length());
 
 	}
